@@ -260,7 +260,7 @@ def divide(pts, l, r):
         splice(a, b, pts[l + 1])
         c_p = Cross_product_3p(pts[l], pts[l + 1], pts[r])
         if c_p > 0.0:
-            # c = join(a, pts[l], b, pts[r], right)
+            c = join(a, pts[l], b, pts[r], right)
             l_ccw = a
             r_cw = b
         elif c_p < 0.0:
